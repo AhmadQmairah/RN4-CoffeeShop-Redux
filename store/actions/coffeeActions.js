@@ -20,3 +20,16 @@ export const getCoffeeShops = () => {
 export const setCoffeeShopsLoading = () => ({
   type: actionTypes.COFFEESHOPS_LOADING
 });
+export const addItemToCart = item => ({
+  type: actionTypes.ADD_ITEM,
+  payload: item
+});
+
+export const removeItemFromCart = item => ({
+  type: actionTypes.REMOVE_ITEM,
+  payload: item
+});
+export const checkoutCart = item => ({
+  type: actionTypes.CHECKOUT,
+  payload: item
+});
