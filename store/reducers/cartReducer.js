@@ -49,7 +49,7 @@ const cartReducer = (state = initialState, action) => {
       );
       console.log("2", check);
       NewItems = [...state.items];
-      NewItems.splice(check);
+      NewItems.splice(check, 1);
       return { items: NewItems };
     }
     case CHECKOUT: {
